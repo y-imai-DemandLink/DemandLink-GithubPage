@@ -1,55 +1,53 @@
 // 背景変更
-function changePage(e){
-    switch(e){
+function changePage(pageName){
+    switch(pageName){
         case "top": // top背景
-            $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-top.jpg)');
-            setValue(e);
+            setValue(pageName);
+            shutterFade(pageName);
         break;
 
         case "appli": // アプリ一覧背景
-            $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-appli.jpg)');
-            setValue(e);
+            setValue(pageName);
+            shutterFade(pageName);
         break;
 
         case "Inquiry": // 問い合わせ背景
-            $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-inquiry.jpg)');
-            setValue(e);
+            setValue(pageName);
+            shutterFade(pageName);
         break;
 
         case "help": // ヘルプ背景
-            $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-help.jpg)');
-            setValue(e);
+            setValue(pageName);
+            shutterFade(pageName);
         break;
     }
 }
 
 function setValue(e){
     console.log("setvalue");
-    console.log(e);
+}
 
+// page切り替え
+function shutterFade(pageName) {
+    $('#shutter').removeClass('opne-shutter');
+    $('#shutter').addClass('close-shutter');
+    setTimeout(function(){
+        console.log("time")
+        $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-'+ pageName + '.jpg)');
+        $('#darkening').addClass('darkening');
+    },2600);
+
+    setTimeout(function(){
+        $('#darkening').removeClass('darkening');
+        $('#shutter').removeClass('close-shutter');
+        $('#shutter').addClass('opne-shutter');
+    },3100);
+}
+
+// pageコンテンツの表示変更
+function changePageContent(pageName){
+    console.log("changePage");
 }
 
 
-function fade() {
-    var target = document.getElementById("fadeLayer");
-    target.style.visibility = "visible";
-  }
 
-
-
-function changeBoxColor( newColor ) {
-    document.getElementById('sakurabox').style.backgroundColor = newColor;
-}
-
-
-const CLASSNAME = "-visible";
-const TIMEOUT = 2000;
-const $target = $(".bg");
-
-setInterval(() => {
-  $target.addClass(CLASSNAME);
-
-  setTimeout(() => {
-    $target.removeClass(CLASSNAME);
-  }, TIMEOUT);
-}, TIMEOUT*2);
