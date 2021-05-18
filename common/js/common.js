@@ -1,6 +1,12 @@
 // 背景変更
 function changePage(pageName){
+    var stats =  $("#page-stats");
+    console.log(stats);
+
     switch(pageName){
+        case "a":
+            console.log("temp");
+
         case "top": // top背景
             setValue(pageName);
             shutterFade(pageName);
@@ -20,6 +26,9 @@ function changePage(pageName){
             setValue(pageName);
             shutterFade(pageName);
         break;
+
+        default: // それ以外の処理
+            return false;
     }
 }
 
@@ -32,8 +41,7 @@ function shutterFade(pageName) {
     $('#shutter').removeClass('opne-shutter');
     $('#shutter').addClass('close-shutter');
     setTimeout(function(){
-        console.log("time")
-        $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-'+ pageName + '.jpg)');
+        $('body').css('background-image', 'url(../DemandLink-githubpage/common/img/back-ground-'+ pageName + '.jpg)');
         $('#darkening').addClass('darkening');
     },2000);
 
