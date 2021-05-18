@@ -35,7 +35,7 @@ function shutterFade(pageName) {
         console.log("time")
         $('body').css('background-image', 'url(../DemandLink-gitpages/common/img/back-ground-'+ pageName + '.jpg)');
         $('#darkening').addClass('darkening');
-    },2600);
+    },2000);
 
     setTimeout(function(){
         $('#darkening').removeClass('darkening');
