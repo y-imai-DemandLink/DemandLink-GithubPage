@@ -41,7 +41,7 @@ function shutterFade(pageName) {
     $('#shutter').removeClass('opne-shutter');
     $('#shutter').addClass('close-shutter');
     setTimeout(function(){
-        $('body').css('background-image', 'url(../DemandLink-githubpage/common/img/back-ground-'+ pageName + '.jpg)');
+        $('body').css('background-image', 'url(../DemandLink-GithubPage/common/img/back-ground-'+ pageName + '.jpg)');
         $('#darkening').addClass('darkening');
     },2000);
 
