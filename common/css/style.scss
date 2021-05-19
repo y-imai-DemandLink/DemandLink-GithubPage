@@ -1,9 +1,5 @@
 $header-color : #dcdcdc;
 
-html{
-    color: red;
-  }
-
 // ####################################################
 // header
 // ####################################################
@@ -71,6 +67,82 @@ body{
     background-image: url("../img/back-ground-top.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    section{
+        // ####################################################
+        // トップ画面
+        // ####################################################
+        .top-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        p{
+            text-align: left;
+            font-family: 'M PLUS 1p', sans-serif;
+            font-weight: lighter;
+            color: white;
+        }
+
+        // ####################################################
+        // 問い合わせ画面
+        // ####################################################
+        .Inquiry{
+            background-color: #dddddd;
+            font-size: 23px;       
+            position: absolute;
+            height:70%;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        
+        form{
+            margin-top: 20px;
+            padding: 10%;
+            div{
+                // border-radius: 3px;
+                // background-color: #f6f6f6;
+                // // vertical-align: middle;
+                // border: 1px solid #dddddd;
+                // margin-top: 20px;
+                // margin-bottom: 15px;
+                // padding: 20px;
+            }
+        }
+        span{
+            color: white;
+            background: #fb3b6f;
+            display: inline-block;
+            padding: 2px 5px;
+            font-size: 10px;
+            font-size: 1rem;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            // position: absolute;
+            right: 16px;
+            top: 19px;
+        }
+        input[type=text],textarea{
+            display: inline-block;
+            min-width: 50%;
+            max-width: 50%;
+            background-color: white;
+        }
+        label{
+            padding: 0 10% 0 0;
+            text-align: right;
+        }
+        
+    }
+}
+
+
+.none {
+	display: none;
 }
 
 
