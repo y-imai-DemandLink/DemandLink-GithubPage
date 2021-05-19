@@ -59,7 +59,8 @@ function shutterFade(pageName) {
 // pageコンテンツの表示変更
 function changePageContent(stats, pageName){
     setTimeout(function(){
-        $("#main-content").children("." + stats).css("display","none");
+        $("#main-content").children("." + stats).addClass("none");
+        console.log(pageName);
         $("#main-content").children("." + pageName).removeClass("none")
     },2000);
 }
