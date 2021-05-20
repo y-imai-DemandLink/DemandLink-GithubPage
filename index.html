@@ -30,7 +30,7 @@ header
                     <a href="#" class="headre-hover" onclick="changePage('top')">トップ</a>
                     <a href="#" class="headre-hover" onclick="changePage('appli')">アプリ一覧</a>
                     <a href="#" class="headre-hover" onclick="changePage('Inquiry')">お問い合わせ</a>
-                    <a href="#" class="headre-hover" onclick="changePage('help')">ヘルプ</a>
+                    <a href="#" class="headre-hover" onclick="changePage('help')">お知らせ</a>
                 </div>
             </div>
         </header>
@@ -44,8 +44,9 @@ main
         <div id="darkening" class=""></div>
 
         <section id="main-content">
+
             <!-- トップの表示 -->
-            <section class="top display">
+            <section class="top content-center display">
                 <div class="top-text">
                     <p>
                     アプリを使って普段の生活を
@@ -58,25 +59,36 @@ main
             </section>
 
             <!-- アプリ一覧の表示 -->
-            <section class="appli display none">
+            <section class="appli content-center display none">
                 <div　class="appli-catch-copy">
-                    <h1>
+                    <h1 class=".h1-txt">
                         自由に選べる各種アプリ
                     </h1>
                     <p>
                         必要に応じて各種アプリを自身で選択し、これらの機能を使用することが出来ます。
                     </p>
-                    <h1>
-                        基本機能
-                    </h1>
-                    <p>
-                        アプリ説明！
-                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>基本機能</th>
+                                <th>会員機能</th>
+                                <th>精算機能</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>きのう</td>
+                                <td>かんいん</td>
+                                <td>せいさん</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
             <!-- 問い合わせ -->
-            <section class="Inquiry display none">
+            <section class="Inquiry content-center display none">
                 <div><h1>Company Name</h1></div>
                 <div><h2>お問い合わせ</h2></div>
                 <div>
@@ -123,9 +135,9 @@ main
                 </div>
             </section>
 
-            <!-- ヘルプ -->
-            <section class="help display none">
-                <div>
+            <!-- お知らせ -->
+            <section class="help content-center display none">
+                <div class="column">
                     <h1>
                         ヘルプ
                         <br>
@@ -137,6 +149,7 @@ main
                     </h1>
                 </div>
             </section>
+            
         </section>
     </body> 
 </html>
