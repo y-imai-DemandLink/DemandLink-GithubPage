@@ -105,12 +105,37 @@ body #main-content .Inquiry {
   width: 80%;
 }
 
+body #main-content .Inquiry div h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+
 body #main-content .Inquiry div form {
   margin-top: 10px;
 }
 
+body #main-content .Inquiry div form .Inquiry-subtitle {
+  text-align: left;
+  padding-left: 10%;
+}
+
 body #main-content .Inquiry div form div {
   text-align: right;
+}
+
+body #main-content .Inquiry div form div .inquiry-content-align .inquiry-content-align-input {
+  display: inline-block;
+  text-align: left;
+  max-width: 50%;
+  min-width: 50%;
+  margin: 0 15% 0 3%;
+}
+
+body #main-content .Inquiry div form div .inquiry-content-align select {
+  border: 1px solid #b4b3b3;
+  background-color: white;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
 }
 
 body #main-content .Inquiry div form div div {
@@ -137,6 +162,25 @@ body #main-content .Inquiry div form div div label span {
   border-radius: 2px;
   right: 16px;
   top: 19px;
+  margin-left: 10px;
+}
+
+body #main-content .Inquiry div form button {
+  float: right;
+  margin-right: 15%;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;
+  /*色*/
+  border-radius: 4px;
+  /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #d27d00;
+  /*線色*/
 }
 
 body #main-content .news {
