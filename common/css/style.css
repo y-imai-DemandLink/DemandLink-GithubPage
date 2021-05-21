@@ -7,6 +7,7 @@ header {
   width: 100%;
   background-color: #dcdcdc;
   padding: 10px 50px 10px 50px;
+  z-index: 100;
 }
 
 header .container {
@@ -61,6 +62,7 @@ body {
   background-image: url("../img/back-ground-top.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 body #main-content .content-center {
@@ -82,17 +84,17 @@ body #main-content .appli {
   text-align: center;
 }
 
-body #main-content .appli table {
+body #main-content .appli .appli-catch-copy table {
   width: 100%;
   border: solid 2px black;
   background-color: red;
 }
 
-body #main-content .appli table th {
+body #main-content .appli .appli-catch-copy table th {
   height: 100px;
 }
 
-body #main-content .appli table td {
+body #main-content .appli .appli-catch-copy table td {
   height: 400px;
 }
 
@@ -135,6 +137,56 @@ body #main-content .Inquiry div form div div label span {
   border-radius: 2px;
   right: 16px;
   top: 19px;
+}
+
+body #main-content .news {
+  width: 70%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body #main-content .news .column .news-article {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.55);
+  list-style: none;
+  display: table;
+}
+
+body #main-content .news .column .news-article .news-img {
+  padding-right: 20px;
+  width: 20%;
+}
+
+body #main-content .news .column .news-article .news-contents {
+  padding-bottom: 10px;
+}
+
+body #main-content .news .column .news-article li {
+  display: table-cell;
+}
+
+body #main-content .news .column .news-article li h1 {
+  border-bottom: solid 3px;
+  border-bottom-color: red;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+body #main-content .news .column .news-article li p {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+body #main-content .news .column .news-article li .read-more {
+  text-align: right;
+  padding-right: 20px;
+}
+
+body #main-content .news .column .news-separation {
+  margin-bottom: 20px;
 }
 
 .none {

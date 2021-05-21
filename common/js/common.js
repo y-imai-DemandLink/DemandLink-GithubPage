@@ -23,7 +23,7 @@ function changePage(pageName){
                 setValue(pageName);
             break;
     
-            case "help": // ヘルプ背景
+            case "news": // ヘルプ背景
                 shutterFade(pageName);
                 changePageContent(stats, pageName);
                 setValue(pageName);
