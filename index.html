@@ -70,17 +70,32 @@ main
                     <table>
                         <thead>
                             <tr>
-                                <th>基本機能</th>
-                                <th>会員機能</th>
-                                <th>精算機能</th>
-
+                                <th>
+                                    <span class="material-icons">phone_android</span>
+                                </th>
+                                <th>
+                                    <span class="material-icons">account_box</span>
+                                </th>
+                                <th>
+                                    <span class="material-icons">price_change</span>
+                                </th>  
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>きのう</td>
-                                <td>かんいん</td>
-                                <td>せいさん</td>
+                                <td>
+                                    <p>基本機能</p>
+                                    当会社の提供している基本機能のご紹介になります。
+
+                                </td>
+                                <td>
+                                    <p>会員機能</p>
+                                    当会社のアプリ会員の方のみが使える機能の紹介になります。
+                                </td>
+                                <td>
+                                    <p>精算機能</p>
+                                    法人向けの精算や決算で便利な機能の紹介になります。
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -97,6 +112,7 @@ main
                             <p>お問い合わせ内容をご入力の上、「確認画面へ」ボタンをクリックしてください。</p>
                         </div>
                         <div>
+                        <!-- <div>
                             <div>
                                 <label>お名前<span>必須</span></label>
                                 <input type="text" name="name" placeholder="例）山田太郎" value="">
@@ -132,8 +148,87 @@ main
                                 <label>お問い合わせ内容<span>必須</span></label>
                                 <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
                             </div>
+                        </div> -->
+              <!-- 基本形↓
+                <div class="container">
+                    <label class="left">
+                    </label>
+                    <div class="right">
+                    </div>
+                </div>
+                -->
+                            <div class="container">
+                                <label class="left">お名前<span>必須</span></label>
+                                <input
+                                class="right"
+                                type="text"
+                                name="name"
+                                placeholder="例）山田太郎"
+                                value=""
+                                />
+                            </div>
+                            <div class="container">
+                                <label class="left">ふりがな<span>必須</span></label>
+                                <input
+                                class="right"
+                                type="text"
+                                name="furigana"
+                                placeholder="例）やまだたろう"
+                                value=""
+                                />
+                            </div>
+                            <div class="container">
+                                <label class="left">メールアドレス<span>必須</span></label>
+                                <input
+                                class="right"
+                                type="text"
+                                name="email"
+                                placeholder="例）guest@example.com"
+                                value=""
+                                />
+                            </div>
+                            <div class="container">
+                                <label class="left">電話番号<span>必須</span></label>
+                                <input
+                                class="right"
+                                type="text"
+                                name="tel"
+                                placeholder="例）0000000000"
+                                value=""
+                                />
+                            </div>
+                            <div class="container">
+                                <label class="left">性別<span>必須</span></label>
+                                <div class="right">
+                                <input type="radio" name="sex" value="男性" checked /> 男性
+                                <input type="radio" name="sex" value="女性" /> 女性
+                                </div>
+                            </div>
+                            <div class="container">
+                                <label class="left">お問い合わせ項目<span>必須</span></label>
+                                <select class="right" name="item">
+                                <option value="">お問い合わせ項目を選択してください</option>
+                                <option value="ご質問・お問い合わせ">
+                                    ご質問・お問い合わせ
+                                </option>
+                                <option value="ご意見・ご感想">ご意見・ご感想</option>
+                                </select>
+                            </div>
+                            <div class="container">
+                                <label class="left">お問い合わせ内容<span>必須</span></label>
+                                <textarea
+                                class="right"
+                                name="content"
+                                rows="5"
+                                placeholder="お問合せ内容を入力"
+                                ></textarea>
+                            </div>
                         </div>
-                        <button type="submit">確認画面へ</button>
+                        <div class="btn-wrap">
+                            <button type="submit">
+                                確認画面へ
+                            </button>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -143,7 +238,7 @@ main
                 <div class="column">
                     <ul class="news-article">
                         <li class="news-img">
-                            <img src="/common/img/noimage.jpg">    
+                            <img src="./common/img/noimage.jpg">    
                         </li>
                         <li class="news-contents">
                             <h1>
