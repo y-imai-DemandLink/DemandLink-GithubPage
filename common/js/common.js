@@ -65,5 +65,43 @@ function changePageContent(stats, pageName){
     },2000);
 }
 
+// mail送信
+// $('form').submit( mailSubmit() );
+
+// function mailSubmit() {
+//     console.log("メール");
+//     return false;
+//         $.ajax({
+//         url : "ajax.php",
+//         type : "POST",
+//         data : {post_data_1:"hoge", post_data_2:"piyo"}
+//     }).done(function(response, textStatus, xhr) {
+//         console.log("ajax通信に成功しました");
+//         console.log(response[0]);
+//         console.log(response[1]);
+//     }).fail(function(xhr, textStatus, errorThrown) {
+//         console.log("ajax通信に失敗しました");
+//     });
+//     return false;
+// }
+
+// mail送信
+$(function () {
+    $('#button').click(function () {
+  
+        // 一括してフォームデータを取得
+        var formData = $('#inquiryMail').serialize();
+        console.log("mail");
+        console.log(formData);
+
+        $.ajax({
+            url: "./common/php/index.php",  //POST送信を行うファイル名を指定
+            type: "POST",
+            data: formData  //POST送信するデータを指定（{ 'hoge': 'hoge' }のように連想配列で直接書いてもOK）
+        });
+    });
+});
+
+
 
 

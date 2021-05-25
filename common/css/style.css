@@ -77,6 +77,8 @@ body #main-content .top p {
   font-family: 'M PLUS 1p', sans-serif;
   font-weight: lighter;
   color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body #main-content .appli {
@@ -94,34 +96,31 @@ body #main-content .appli .appli-catch-copy p {
 }
 
 body #main-content .appli .appli-catch-copy table {
+  border-spacing: 7px 0px;
   margin-right: auto;
   margin-left: auto;
-  border-spacing: 0;
-  border-collapse: separate;
-  -moz-border-radius: 6px;
   overflow: hidden;
   width: 100%;
-  background-color: white;
   margin-top: 20px;
 }
 
 body #main-content .appli .appli-catch-copy table thead tr th {
-  border: solid 2px;
-  border-right: 0px;
+  width: 30%;
+  border: solid 4px black;
   border-collapse: separate;
   height: 100px;
   border-radius: 18px 18px 0 0;
+  background-color: white;
 }
 
 body #main-content .appli .appli-catch-copy table thead tr th span {
   font-size: 70px;
 }
 
-body #main-content .appli .appli-catch-copy table thead tr .border-right {
-  border-right: 2px solid black;
-}
-
 body #main-content .appli .appli-catch-copy table tbody tr td {
+  border: solid 4px black;
+  background: white;
+  border-top: none;
   height: 400px;
 }
 
