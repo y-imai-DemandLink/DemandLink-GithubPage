@@ -4,7 +4,7 @@ header {
   position: fixed;
   justify-content: space-between;
   width: 100%;
-  background-color: #f4ffff;
+  background-color: #121629;
   padding: 10px 50px 10px 50px;
   z-index: 100;
 }
@@ -20,6 +20,7 @@ header .container .left {
 
 header .container .left p {
   font-weight: bold;
+  color: white;
 }
 
 header .container .right {
@@ -30,6 +31,10 @@ header .container .right {
 header .container .right a {
   padding-left: 3rem;
   font-weight: bold;
+}
+
+header .container .right a:visited {
+  color: white;
 }
 
 header .container .right .headre-hover {
@@ -247,6 +252,7 @@ body #main-content .news .column .news-article .news-img {
 
 body #main-content .news .column .news-article .news-contents {
   padding-bottom: 10px;
+  width: 80%;
 }
 
 body #main-content .news .column .news-article li {
