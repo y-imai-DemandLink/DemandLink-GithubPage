@@ -98,7 +98,14 @@ $(function () {
             url: "./common/php/index.php",  //POST送信を行うファイル名を指定
             type: "POST",
             data: formData  //POST送信するデータを指定（{ 'hoge': 'hoge' }のように連想配列で直接書いてもOK）
+        }).done(function(response, textStatus, xhr) {
+            console.log("ajax通信に成功しました");
+            console.log(response[0]);
+            console.log(response[1]);
+        }).fail(function(xhr, textStatus, errorThrown) {
+            console.log("ajax通信に失敗しました");
         });
+        return false;
     });
 });
 

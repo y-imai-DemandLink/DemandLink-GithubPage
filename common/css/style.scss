@@ -1,10 +1,9 @@
-$header-color : #dcdcdc;
+$header-color : #f4ffff;
 
 // ####################################################
 // header
 // ####################################################
 header{
-    background: #fff;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -25,7 +24,7 @@ header{
             width: 70%;
             text-align: right;
             a{
-                padding-left: 2rem;
+                padding-left: 3rem;
                 font-weight: bold;
                 // text-decoration: none;
             }
@@ -88,7 +87,7 @@ body{
         .top{
             p{
                 text-align: left;
-                font-family: 'M PLUS 1p', sans-serif;
+                font-family: serif;
                 font-weight: lighter;
                 color: white;
                 font-size: 20px;
@@ -121,9 +120,18 @@ body{
                     margin-top: 20px;
                     thead{
                         tr{
+                            .appli-1{
+                                background-color: #ffe5ff;
+                            }
+                            .appli-2{
+                                background-color: #e5f2ff;
+                            }
+                            .appli-3{
+                                background-color: #e5ffe5;
+                            }
                             th{
                                 width: 30%;
-                                border: solid 4px black;
+                                border: solid 3px black;
                                 border-collapse: separate;
                                 height:100px;
                                 border-radius:18px 18px 0 0; 
@@ -137,7 +145,7 @@ body{
                     tbody{
                         tr{
                             td{
-                                border: solid 4px black;
+                                border: solid 3px black;
                                 background: white;
                                 border-top: none;
                                 height:400px;
@@ -156,94 +164,14 @@ body{
         // ####################################################
         // 問い合わせ画面
         // ####################################################
-        // .Inquiry{
-        //     background-color: #dddddd;
-        //     font-size: 23px;       
-        //     height:70%;
-        //     width: 80%;
-        //     div{
-        //         h2{
-        //             padding-top: 10px;
-        //             text-align: center;
-        //         }
-        //         form{
-        //             margin-top: 10px;
-        //             .Inquiry-subtitle{
-        //                 text-align: left;
-        //                 padding-left: 10%;
-        //             }
-        //             div{
-        //                 text-align: right;
-        //                 .inquiry-content-align{
-        //                     // display: inline-block;
-        //                     .inquiry-content-align-input{
-        //                     display: inline-block;
-        //                     text-align: left;
-        //                     max-width: 50%;
-        //                     min-width: 50%;
-        //                     margin: 0 15% 0 3%;
-        //                     }
-        //                     select{
-        //                         border: 1px solid #b4b3b3;
-        //                         background-color: white;
-        //                         -moz-appearance: menulist;
-        //                         -webkit-appearance: menulist;
-        //                     }
-        //                 }
-        //                 div{
-        //                     margin-top: 10px;
-        //                     input[type=text],textarea{
-        //                         display: inline-block;
-        //                         min-width: 50%;
-        //                         max-width: 50%;
-        //                         background-color: white;
-        //                         margin: 0 15% 0 3%;
-        //                     }
-        //                     label{
-        //                         span{
-        //                             color: white;
-        //                             background: #fb3b6f;
-        //                             display: inline-block;
-        //                             padding: 2px 5px;
-        //                             font-size: 10px;
-        //                             font-size: 1rem;
-        //                             -moz-border-radius: 2px;
-        //                             -webkit-border-radius: 2px;
-        //                             border-radius: 2px;
-        //                             // position: absolute;
-        //                             right: 16px;
-        //                             top: 19px;
-        //                             margin-left: 10px;
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //             button{
-        //                 float: right;
-        //                 margin-right: 15%;
-        //                 position: relative;
-        //                 display: inline-block;
-        //                 padding: 0.25em 0.5em;
-        //                 text-decoration: none;
-        //                 color: #FFF;
-        //                 background: #fd9535;/*色*/
-        //                 border-radius: 4px;/*角の丸み*/
-        //                 box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
-        //                 font-weight: bold;
-        //                 border: solid 2px #d27d00;/*線色*/
-        //             }
-        //         }
-        //     }
-        // }
-
         .Inquiry {
-            background-color: #dddddd;
+            // background-color: #dddddd; 	
+            background-color: #ffeaf4; 	
             font-size: 23px;
-            //   表示崩れは↓が原因でした。
-            //   height: 70%;
             height: auto;
             margin-top: 40px; // ここは適当な数値
             width: 80%;
+            font-family: serif;
             div {
               h2 {
                 padding-top: 10px;
